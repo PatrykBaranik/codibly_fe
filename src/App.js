@@ -17,7 +17,7 @@ function App() {
 
   const fetchWeatherForecast = async (latitude, longitude) => {
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/weather-forecast?latitude=${latitude}&longitude=${longitude}`);
+      const response = await axios.get(`http://0.0.0.0:8000/weather-forecast?latitude=${latitude}&longitude=${longitude}`);
       setForecastData(response.data);
       setIterator([0,1,2,3,4,5,6]);
       console.log(response.data);
